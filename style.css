@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: mintcream;
+    color: darkslategray;
+    font-size: 1em;
+}
+
+.main-section {
+    background-color: peachpuff;
+    padding: 2em;
+    border: 0.3em solid coral;
+}
+
+.team-section {
+    background-color: lavender;
+    padding: 2em;
+    border: 0.3em solid darkviolet;
+    margin-top: 2em;
+}
+
+.flex-container {
+    background-color: lightyellow;
+    padding: 2em;
+    border: 0.25em solid gold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: darkgreen;
+    margin-bottom: 0.5em;
+    text-align: center;
+    border: 0.15em solid forestgreen;
+    padding: 0.5em;
+    background-color: honeydew;
+}
+
+.description {
+    font-size: 1.2em;
+    color: dimgray;
+    text-align: center;
+    margin-bottom: 2em;
+    border: 0.1em solid silver;
+    padding: 0.8em;
+    background-color: ivory;
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    width: 100%;
+    background-color: lightcyan;
+    padding: 1.5em;
+    border: 0.2em solid teal;
+}
+
+.card {
+    background-color: white;
+    border: 0.2em solid mediumseagreen;
+    padding: 1.5em;
+    width: 15em;
+    text-align: center;
+    border-radius: 0.5em;
+}
+
+.card img {
+    width: 100%;
+    height: 12em;
+    object-fit: cover;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+.card h3 {
+    font-size: 1.3em;
+    color: darkgreen;
+    margin-bottom: 0.5em;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: dimgray;
+    line-height: 1.5;
+}
+
+.team-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
+    background-color: lavenderblush;
+    padding: 1.5em;
+    border: 0.2em solid mediumvioletred;
+}
+
+.team-card {
+    background-color: white;
+    border: 0.2em solid slateblue;
+    padding: 1.5em;
+    width: 16em;
+    text-align: center;
+    border-radius: 0.5em;
+}
+
+.team-photo {
+    width: 100%;
+    height: 15em;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    border: 0.2em solid slateblue;
+}
+
+.team-card h3 {
+    font-size: 1.2em;
+    color: indigo;
+    margin-bottom: 0.5em;
+}
+
+.team-card p {
+    font-size: 0.9em;
+    color: dimgray;
+    line-height: 1.4;
+    margin-bottom: 1em;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.8em;
+}
+
+.social-links a {
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+    margin-top: 2em;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .cards-wrapper,
+    .team-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card,
+    .team-card {
+        width: 100%;
+        max-width: 20em;
+    }
+}
